@@ -33,7 +33,7 @@ echo "Aplicacion #2" | sudo tee /var/www/html/app2/index.html
 # Una vez compiado, si es reiniciado el servicio de apache, deberá configurar los nuevos archivos creados.
 # Donde dice cambiar sustituir.
 cd ~/
-git clone https://github.com/vacax/virtualhost-proxyreverso && cd virtualhost-proxyreverso
+git clone https://github.com/christpaul01/virtualhost-proxyreverso && cd virtualhost-proxyreverso
 sudo cp configuraciones/*.conf /etc/httpd/conf.d/
 
 # Clonando el proyecto de Javalin-demo e iniciando la aplicación, escuchando en el puerto 7000
