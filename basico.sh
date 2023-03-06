@@ -40,4 +40,6 @@ sudo cp configuraciones/*.conf /etc/httpd/conf.d/
 cd ~/
 git clone https://github.com/vacax/javalin-demo/ && cd javalin-demo && bash start.sh &
 curl localhost:7000
+git clone https://github.com/christpaul01/javalin-demo1/ && cd javalin-demo1 && bash start.sh &
+curl localhost:7001
 echo "Script completado!..."
