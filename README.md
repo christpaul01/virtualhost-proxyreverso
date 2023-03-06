@@ -4,14 +4,16 @@ En una instancia basada en Amazon Linux, clonar el proyecto actual y ejecutar lo
 
 `
 
-sudo certbot certonly --standalone
+
 
 wget https://raw.githubusercontent.com/christpaul01/virtualhost-proxyreverso/master/basico.sh && chmod +x basico.sh && bash basico.sh
  && chmod +x basico.sh && bash basico.sh
 
-sudo cp ~/virtualhost-proxyreverso/configuraciones/app1-app2.conf /etc/httpd/conf.d/
-cd /etc/httpd/conf.d
-sudo service httpd restart
+
+# comandos para instalar let'sEncrypt
+sudo systemctl stop httpd
+
+sudo certbot certonly --standalone
 
 # comandos utiles
 sudo systemctl status httpd
