@@ -5,15 +5,17 @@ En una instancia basada en Amazon Linux, clonar el proyecto actual y ejecutar lo
 `
 
 
-
+```
 wget https://raw.githubusercontent.com/christpaul01/virtualhost-proxyreverso/master/basico.sh && chmod +x basico.sh && bash basico.sh
  && chmod +x basico.sh && bash basico.sh
-
+```
 
 # comandos para instalar let'sEncrypt
+```
 sudo systemctl stop httpd
 
 sudo certbot certonly --standalone
+```
 
 # comandos utiles
 sudo systemctl status httpd
@@ -53,16 +55,16 @@ En este punto tenemos disponible todas las herramientas necesarias instaladas.
 
 **Configurando Virtualhost**
 
-Es necesario contar con un servicio DNS, para poder registrar los registro tipo A, 
-apuntando a la dirección IP de la máquina asignada en Amazon. En el archivo ``virtualhost.conf`` 
-en la ruta de ``/etc/httpd/conf.d/``, deben cambio el valor ``CAMBIAR`` por la IP, ver imagenes.
+Es necesario contar con un servicio DNS, en nuestro caso usaremos namecheap, para poder registrar los registro tipo A, 
+apuntando a la dirección IP de la máquina asignada en Amazon. 
 
 ![amazon-ip](imagenes/ip-amazo.png)
 
-![archivo virtual host](imagenes/virtualhost.png)
 
 Una vez modificado ejecutar el comando: 
 ```
 sudo service httpd reload
 ```
 
+De ahi se puede visitar app1.christopherpaul.me y app2.christopherpaul.me, deberiamos de tener dos aplicaciones corriendo
+en un mismo hosts teniendo la misma direccion IP. 
