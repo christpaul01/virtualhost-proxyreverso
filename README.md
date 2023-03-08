@@ -5,6 +5,8 @@ Se modificaron los archivos tal como `seguro.conf` encontrado en configuraciones
 
 Tambien se modifico el archivo `configuraciones/proxyreverso.conf` cual contenia un error de sintaxis. Le faltaba una P en la linea 5.
 
+Se modifico tambien el script bash llamado `basico.sh` para incluir nuestro repositorio que hemos hecho fork.
+
 
 En una instancia basada en Amazon Linux, clonar el proyecto actual y ejecutar los siguientes comandos para instalación básica:
 
