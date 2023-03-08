@@ -17,6 +17,9 @@ sudo systemctl stop httpd
 sudo certbot certonly --standalone
 ```
 
+Incluimos los sitios app1.christopherpaul.me y app2.christopherpaul.me 
+`(Evitaremos separarlos con coma para que ambos puedan tener sus archivos diferentes`
+
 # comandos utiles
 sudo systemctl status httpd
 sudo systemctl restart httpd
