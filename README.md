@@ -1,8 +1,13 @@
 # Repositorio para la prueba de concepto de Vitualhost y Proxy Reverso
 
+Para hacerlo posible se hizo un fork al repositorio virtualhost-proxyreverso del professor @vacax.
+Se modificaron los archivos tal como `seguro.conf` encontrado en configuraciones del cual cambiamos los campos que decian CAMBIAR a nuestro sitio.
+
+Tambien se modifico el archivo `configuraciones/proxyreverso.conf` cual contenia un error de sintaxis. Le faltaba una P en la linea 5.
+
+
 En una instancia basada en Amazon Linux, clonar el proyecto actual y ejecutar los siguientes comandos para instalación básica:
 
-`
 
 
 ```
