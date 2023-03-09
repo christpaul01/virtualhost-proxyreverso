@@ -1,7 +1,8 @@
 # Repositorio para la prueba de concepto de Vitualhost y Proxy Reverso
 
 Para hacerlo posible se hizo un fork al repositorio virtualhost-proxyreverso del professor @vacax.
-Se modificaron los archivos tal como `seguro.conf` encontrado en configuraciones del cual cambiamos los campos que decian CAMBIAR a nuestro sitio.
+Se modificaron los archivos tal como `seguro.conf` encontrado en configuraciones del cual
+cambiamos los campos que decian CAMBIAR a nuestro sitio.
 
 Tambien se modifico el archivo `configuraciones/proxyreverso.conf` cual contenia un error de sintaxis. Le faltaba una P en la linea 5.
 
@@ -14,7 +15,6 @@ En una instancia basada en Amazon Linux, clonar el proyecto actual y ejecutar lo
 
 ```
 wget https://raw.githubusercontent.com/christpaul01/virtualhost-proxyreverso/master/basico.sh && chmod +x basico.sh && bash basico.sh
- && chmod +x basico.sh && bash basico.sh
 ```
 
 # comandos para instalar let'sEncrypt
@@ -76,5 +76,4 @@ Una vez modificado ejecutar el comando:
 sudo service httpd reload
 ```
 
-De ahi se puede visitar app1.christopherpaul.me y app2.christopherpaul.me, deberiamos de tener dos aplicaciones corriendo
-en un mismo hosts teniendo la misma direccion IP. 
+De ahi se puede visitar `app1.christopherpaul.me` y `app2.christopherpaul.me`, deberiamos de tener dos aplicaciones corriendo en un mismo hosts teniendo la misma direccion IP. 
